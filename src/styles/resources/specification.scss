@@ -1,0 +1,11 @@
+/* ---- Specification ---- */
+* {
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+
+body {
+    background: $body-color;
+    font-family: $font-family;
+}
