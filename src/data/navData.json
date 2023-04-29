@@ -1,0 +1,28 @@
+{
+  "navigation": [
+    {
+      "text": "Головна",
+      "href": "#"
+    },
+    {
+      "text": "Про нас",
+      "href": "#about"
+    },
+    {
+      "text": "Меню",
+      "href": "#menu"
+    },
+    {
+      "text": "Переваги",
+      "href": "#benefits"
+    },
+    {
+      "text": "Відгуки",
+      "href": "#feedbacks"
+    },
+    {
+      "text": "FAQ",
+      "href": "#faq"
+    }
+  ]
+}

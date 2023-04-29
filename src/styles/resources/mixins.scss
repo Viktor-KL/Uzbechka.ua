@@ -1,0 +1,47 @@
+@import 'variables';
+
+/* ---- Buttons ---- */
+@mixin yellow-btn {
+    color: $c-black;
+    background: $c-yellow;
+    border: 1px solid $c-yellow;
+    border-radius: 15px;
+    padding: 15px 40px;
+    transition: .3s ease;
+
+    &:hover {
+        color: $c-white;
+        background: none;
+        border: 1px solid $c-yellow;
+    }
+}
+@mixin ghost-btn {
+    color: $c-white;
+    background: none;
+    border: 1px solid $c-yellow;
+    border-radius: 15px;
+    padding: 15px 40px;
+    transition: .3s ease;
+
+    &:hover {
+        color: $c-black;
+        background: $c-yellow;
+        border: 1px solid $c-black;
+    }
+}
+
+/* ---- Positions ---- */
+@mixin full-width-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ---- UI ---- */
+/* -- Logo -- */
+@mixin logo {
+    color: $c-white;
+    font-family: $logo-font-family;
+    font-size: 24px;
+    font-weight: 700;
+}
