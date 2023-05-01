@@ -1,6 +1,8 @@
 import { FC } from "react";
 import Link from "next/link";
 
+import Button from 'components/ui/Button/Button'
+
 import navData from "data/navData.json";
 import styles from "./Header.module.scss";
 
@@ -21,9 +23,7 @@ const Header: FC = () => {
               </a>
             ))}
           </div>
-          <a href="" className={styles.btn}>
-            Меню
-          </a>
+          <Button type='anchor' text='Меню' href='#menu' className="ghost-btn" customClass={styles.button}/>
         </nav>
         <div className={styles.line}></div>
       </div>

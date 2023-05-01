@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import type { NextPage } from 'next'
-import Header from '@/components/layout/Header/Header';
+import Offer from 'components/screens/Offer/Offer';
 
 const Home: NextPage = () => {
   return (
@@ -8,6 +8,7 @@ const Home: NextPage = () => {
       <Head>
         <title>Home | Uzbechka.ua</title>
       </Head>
+      <Offer />
     </div>
   )
 }

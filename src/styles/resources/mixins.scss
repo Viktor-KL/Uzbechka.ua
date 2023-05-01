@@ -1,33 +1,10 @@
 @import 'variables';
 
-/* ---- Buttons ---- */
-@mixin yellow-btn {
-    color: $c-black;
-    background: $c-yellow;
-    border: 1px solid $c-yellow;
-    border-radius: 15px;
-    padding: 15px 40px;
-    transition: .3s ease;
-
-    &:hover {
-        color: $c-white;
-        background: none;
-        border: 1px solid $c-yellow;
-    }
-}
-@mixin ghost-btn {
+/* ---- Text ---- */
+@mixin description {
+    font-size: $font-size;
     color: $c-white;
-    background: none;
-    border: 1px solid $c-yellow;
-    border-radius: 15px;
-    padding: 15px 40px;
-    transition: .3s ease;
-
-    &:hover {
-        color: $c-black;
-        background: $c-yellow;
-        border: 1px solid $c-black;
-    }
+    font-weight: 500;
 }
 
 /* ---- Positions ---- */
@@ -44,4 +21,21 @@
     font-family: $logo-font-family;
     font-size: 24px;
     font-weight: 700;
+}
+@mixin block-border {
+    border: 1px solid $c-yellow;
+    border-radius: 15px;
+}
+@mixin quote {
+    position: relative;
+
+    &:before {
+        content: '“';
+        position: absolute;
+        color: $c-yellow;
+        font-size: 100px;
+        font-family: $secondary-font-family;
+        top: -40px;
+        left: 15px;
+    }
 }

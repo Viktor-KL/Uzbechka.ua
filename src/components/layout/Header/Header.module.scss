@@ -40,20 +40,21 @@
     transform: translate(-50%, 0);
   }
 }
+.button {
+  padding: 8px 40px;
+  width: rem();
+
+}
 .logo {
   @include logo;
 }
 .logoPart {
   color: $c-yellow;
 }
-.btn {
-  @include ghost-btn;
-  padding: 8px 40px;
-}
 .line {
     height: 1.5px;
     width: 100%;
     background: $c-white;
     opacity: .4;
-    margin: 2rem 0;
+    margin-top: 2rem;
 }

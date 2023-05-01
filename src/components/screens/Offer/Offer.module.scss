@@ -1,0 +1,63 @@
+@import "/src/styles/resources";
+
+.section {
+  background: url("/img/offer/img-1.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 40px 0;
+}
+
+.wrapper {
+  @include full-width-content;
+}
+
+.content {
+  max-width: 664px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.title {
+  font-size: 36px;
+  color: $c-white;
+  text-transform: uppercase;
+  font-family: $secondary-font-family;
+  font-weight: 800;
+}
+
+.description {
+  @include description;
+  @include block-border;
+  background: $c-black;
+  padding: 25px;
+  max-width: 480px;
+  @include quote;
+}
+
+.btnWrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.button {
+  text-align: center;
+  width: 250px;
+}
+
+.mapIcon {
+  position: relative;
+}
+
+.mapIcon svg {
+  fill: currentColor;
+}
+
+.mapButton {
+  height: 50px;
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
