@@ -1,41 +1,77 @@
-@import 'variables';
+@import "variables";
 
 /* ---- Text ---- */
 @mixin description {
-    font-size: $font-size;
-    color: $c-white;
-    font-weight: 500;
+  font-size: $font-size;
+  color: $c-white;
+  font-weight: 500;
+
+  @include phone {
+    font-size: 16px;
+  }
 }
 
 /* ---- Positions ---- */
 @mixin full-width-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* ---- UI ---- */
 /* -- Logo -- */
 @mixin logo {
-    color: $c-white;
-    font-family: $logo-font-family;
-    font-size: 24px;
-    font-weight: 700;
+  color: $c-white;
+  font-family: $logo-font-family;
+  font-size: 24px;
+  font-weight: 700;
 }
 @mixin block-border {
-    border: 1px solid $c-yellow;
-    border-radius: 15px;
+  border: 1px solid $c-yellow;
+  border-radius: 15px;
 }
 @mixin quote {
-    position: relative;
+  position: relative;
 
-    &:before {
-        content: '“';
-        position: absolute;
-        color: $c-yellow;
-        font-size: 100px;
-        font-family: $secondary-font-family;
-        top: -40px;
-        left: 15px;
-    }
+  &:before {
+    content: "“";
+    position: absolute;
+    color: $c-yellow;
+    font-size: 100px;
+    font-family: $secondary-font-family;
+    top: -40px;
+    left: 15px;
+  }
+}
+
+/* ---- Media Query ---- */
+@mixin desktop {
+  @media screen and (max-width: $desktop) {
+    @content;
+  }
+}
+@mixin laptop {
+  @media screen and (max-width: $laptop) {
+    @content;
+  }
+}
+@mixin tablet-large {
+  @media screen and (max-width: $tablet-large) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media screen and (max-width: $tablet) {
+    @content;
+  }
+}
+@mixin phablet {
+  @media screen and (max-width: $phablet) {
+    @content;
+  }
+}
+@mixin phone {
+  @media screen and (max-width: $phone) {
+    @content;
+  }
 }

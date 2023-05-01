@@ -4,26 +4,71 @@
   background: url("/img/offer/img-1.png") no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 40px 0;
+  padding: 2em 0;
 }
 
 .wrapper {
   @include full-width-content;
+  position: relative;
+
+  @include tablet {
+    flex-direction: column-reverse;
+  }
 }
 
 .content {
   max-width: 664px;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 2em;
+
+  @include tablet {
+    text-align: center;
+    align-items: center;
+  }
+
+  @include tablet {
+    gap: 1.5em;
+  }
+}
+
+.image {
+  height: 480px;
+  width: 480px;
+  position: relative;
+  background: url("/img/offer/img-2.png") no-repeat;
+  background-size: contain;
+  background-position: center;
+
+  @include tablet {
+    background-size: 50%;
+    height: 240px;
+  }
+
+  @include phone {
+    max-width: 300px;
+    background-size: 70%;
+  }
 }
 
 .title {
-  font-size: 36px;
+  font-size: 2.2em;
   color: $c-white;
   text-transform: uppercase;
   font-family: $secondary-font-family;
   font-weight: 800;
+
+  @include laptop {
+    font-size: 1.6em;
+  }
+
+  @include phablet {
+    font-size: 1.4em;
+  }
+
+  @include phone {
+    font-size: 1.2em;
+  }
 }
 
 .description {
@@ -33,16 +78,22 @@
   padding: 25px;
   max-width: 480px;
   @include quote;
+
+  @include phone {
+    width: 100%;
+    padding: 18px;
+  }
 }
 
 .btnWrapper {
   display: flex;
   gap: 20px;
-}
 
-.button {
-  text-align: center;
-  width: 250px;
+  @include phone {
+    width: 100%;
+    gap: 0;
+    justify-content: space-between;
+  }
 }
 
 .mapIcon {

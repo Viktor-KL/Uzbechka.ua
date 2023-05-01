@@ -1,7 +1,8 @@
 @import "/src/styles/resources/mixins";
 
 .wrapper {
-    padding: 2rem 0;
+  padding: 2rem 0;
+  position: relative;
 }
 .navigation,
 .links {
@@ -9,6 +10,10 @@
 }
 .links {
   gap: 3rem;
+
+  @include tablet-large {
+    display: none;
+  }
 }
 .links a {
   font-size: 1.2rem;
@@ -42,8 +47,14 @@
 }
 .button {
   padding: 8px 40px;
-  width: rem();
 
+  @include tablet-large {
+    padding: 8px 60px;
+  }
+
+  @include phone {
+    padding: 8px 40px;
+  }
 }
 .logo {
   @include logo;
@@ -52,9 +63,79 @@
   color: $c-yellow;
 }
 .line {
-    height: 1.5px;
-    width: 100%;
-    background: $c-white;
-    opacity: .4;
-    margin-top: 2rem;
+  height: 1.5px;
+  width: 100%;
+  background: $c-white;
+  opacity: 0.4;
+  margin-top: 2rem;
+
+  @include phone {
+    display: none;
+  }
+}
+
+.mobileLinksWrap {
+  margin-top: 30px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  display: none;
+
+  @include tablet-large {
+    display: block;
+  }
+
+  @include phone {
+    margin-top: 15px;
+  }
+}
+
+.mobileLink {
+  color: $c-white;
+  background: $c-black;
+  padding: 0 40px;
+  font-size: 18px;
+  font-weight: 500;
+  border-top: 1px solid $c-yellow;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  transition: .2s ease;
+  justify-content: space-between;
+
+  &:hover {
+    color: $c-black;
+    background: $c-yellow;
+  }
+
+  @include phone {
+    padding: 0 20px;
+  }
+}
+
+.btnPart {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  @include phone {
+    gap: 10px;
+  }
+}
+
+.close, .open {
+  height: 32px;
+  width: 32px;
+  color: $c-white;
+  display: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  @include tablet-large {
+    display: block;
+  }
 }
