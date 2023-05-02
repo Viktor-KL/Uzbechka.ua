@@ -28,7 +28,7 @@
 }
 @mixin block-border {
   border: 1px solid $c-yellow;
-  border-radius: 15px;
+  border-radius: $border-radius;
 }
 @mixin quote {
   position: relative;

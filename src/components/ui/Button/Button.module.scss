@@ -6,7 +6,7 @@
   color: $c-black;
   background: $c-yellow;
   border: 1px solid $c-yellow;
-  border-radius: 15px;
+  border-radius: $border-radius;
   padding: 15px 0;
   transition: 0.3s ease;
 
@@ -21,7 +21,7 @@
   color: $c-white;
   background: none;
   border: 1px solid $c-yellow;
-  border-radius: 15px;
+  border-radius: $border-radius;
   padding: 15px 0;
   transition: 0.3s ease;
 
