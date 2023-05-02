@@ -31,3 +31,20 @@
     border: 1px solid $c-black;
   }
 }
+
+.yellow-border-btn {
+  width: 250px;
+  text-align: center;
+  color: $c-black;
+  background: $c-yellow;
+  border: 1px solid $c-black;
+  border-radius: $border-radius;
+  padding: 15px 0;
+  transition: 0.3s ease;
+
+  &:hover {
+    color: $c-black;
+    background: none;
+    border: 1px solid $c-black;
+  }
+}

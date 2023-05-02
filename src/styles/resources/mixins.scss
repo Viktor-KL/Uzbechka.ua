@@ -11,6 +11,13 @@
   }
 }
 
+@mixin title {
+  font-size: 2.8rem;
+  font-family: $secondary-font-family;
+  color: $c-black;
+  font-weight: 800;
+}
+
 /* ---- Positions ---- */
 @mixin full-width-content {
   display: flex;

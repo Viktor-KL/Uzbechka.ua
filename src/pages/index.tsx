@@ -3,6 +3,8 @@ import type { NextPage } from 'next'
 import Offer from 'components/screens/Offer/Offer';
 import About from 'components/screens/About/About';
 import Menu from 'components/screens/Menu/Menu';
+import BannerMenu from 'components/screens/BannerMenu/BannerMenu';
+import BannerInstagram from 'components/screens/BannerInstagram/BannerInstagram';
 
 const Home: NextPage = () => {
   return (
@@ -13,6 +15,8 @@ const Home: NextPage = () => {
       <Offer />
       <About />
       <Menu />
+      <BannerMenu />
+      <BannerInstagram />
     </div>
   )
 }

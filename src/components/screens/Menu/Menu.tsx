@@ -9,13 +9,13 @@ const Menu: FC = () => {
     <section className={styles.section}>
       <div className="container">
         <div className={styles.wrapper}>
-            <Image
-              src="/img/menu/img-1.png"
-              width={500}
-              height={550}
-              alt="yard"
-              className={styles.yardImage}
-            />
+          <Image
+            src="/img/menu/img-1.png"
+            width={500}
+            height={550}
+            alt="yard"
+            className={styles.yardImage}
+          />
 
           <div className={styles.rightPart}>
             <Image

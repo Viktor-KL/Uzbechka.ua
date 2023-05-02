@@ -1,0 +1,15 @@
+@import '/src/styles/resources/';
+
+.descriptionWrapper {
+    background: $c-black;
+    padding: 35px;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    @include block-border;
+    @include quote;
+}
+
+.descriptionFoot, .descriptionHead {
+    @include description;
+}
