@@ -1,13 +1,18 @@
 import { FC } from 'react'
 
-import styles from './About.module.scss'
+import menuData from 'data/menuData.json'
+import styles from './Menu.module.scss'
 
-const About: FC = () => {
+const Menu: FC = () => {
     return (
-        <section>
-
+        <section className={styles.section}>
+            <div className="container">
+                <div className={styles.wrapper}>
+                    
+                </div>
+            </div>
         </section>
     )
 }
 
-export default About;
+export default Menu;

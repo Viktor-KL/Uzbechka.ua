@@ -5,6 +5,10 @@
   padding: 80px 0;
   border-bottom-right-radius: $border-radius;
   border-bottom-left-radius: $border-radius;
+
+  @include phablet {
+    padding: 40px 0;
+  }
 }
 
 .description {
