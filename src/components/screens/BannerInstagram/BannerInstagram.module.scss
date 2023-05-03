@@ -6,7 +6,8 @@
     font-family: $secondary-font-family;
 }
 .descriptionFoot {
-    opacity: .4;
+    @include light-description;
+    color: $c-black;
 }
 
 .image {

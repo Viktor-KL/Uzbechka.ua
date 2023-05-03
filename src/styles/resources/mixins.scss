@@ -26,6 +26,17 @@
   }
 }
 
+@mixin light-description {
+  color: $c-white;
+  font-size: 18px;
+  font-weight: 400;
+  opacity: .6;
+
+  @include phablet {
+    font-size: 16px;
+  }
+}
+
 /* ---- Positions ---- */
 @mixin full-width-content {
   display: flex;
