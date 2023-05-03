@@ -13,3 +13,19 @@
 .descriptionFoot, .descriptionHead {
     @include description;
 }
+
+.image {
+
+    @include laptop {
+        width: 100%;
+        height: 500px;
+    }
+
+    @include tablet-large {
+        height: 490px;
+    }
+
+    @include phone {
+        height: 400px;
+    }
+}

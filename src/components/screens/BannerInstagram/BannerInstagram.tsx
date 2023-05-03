@@ -11,7 +11,7 @@ const BannerInstagram: FC = () => {
             imageAlt={bannerData.instagram.imgAlt}
             width={bannerData.instagram.imgWidth}
             height={bannerData.instagram.imgHeight}
-            imgClass={bannerData.instagram.imgClass}
+            imgClass={styles.image}
             title={bannerData.instagram.title}
             descriptionHead={bannerData.instagram.descriptionHead}
             descriptionFoot={bannerData.instagram.descriptionFoot}

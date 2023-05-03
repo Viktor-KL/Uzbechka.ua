@@ -7,8 +7,7 @@
         "imgSrc": "/img/banner/img-1.png",
         "imgAlt": "cooker",
         "imgWidth": 440,
-        "imgHeight": 580,
-        "imgClass": "cookerImg"
+        "imgHeight": 580
     },
     "instagram": {
         "title": "Слідкуйте за процесом",
@@ -18,7 +17,6 @@
         "imgSrc": "/img/banner/img-2.png",
         "imgAlt": "caffe",
         "imgWidth": 480,
-        "imgHeight": 480,
-        "imgClass": "yardImg"
+        "imgHeight": 480
     }
 }

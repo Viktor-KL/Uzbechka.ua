@@ -10,44 +10,56 @@ interface BannerProps {
   descriptionHead: string;
   descriptionFoot: string;
   buttonText: string;
-  
+
   imageSrc: string;
   imageAlt: string;
   descriptionWrapClass: string;
   width: number;
   height: number;
-  descriptionHeadClass?: string,
-  descriptionFootClass?: string,
+  descriptionHeadClass?: string;
+  descriptionFootClass?: string;
   imgClass?: string;
 }
 
 const Banner: FC<BannerProps> = ({
-    title,
-    descriptionHead,
-    descriptionFoot,
-    buttonText,
-    descriptionHeadClass,
-    descriptionFootClass,
-    imageSrc,
-    imageAlt,
-    descriptionWrapClass,
-    width,
-    height,
-    imgClass = ""
-  }) => {
+  title,
+  descriptionHead,
+  descriptionFoot,
+  buttonText,
+  descriptionHeadClass,
+  descriptionFootClass,
+  imageSrc,
+  imageAlt,
+  descriptionWrapClass,
+  width,
+  height,
+  imgClass = "",
+}) => {
   return (
     <section className={styles.section}>
       <div className="container">
         <div className={styles.wrapper}>
-            <Image src={imageSrc} alt={imageAlt} width={width} height={height}  className={imgClass}/>
-            <div className={styles.content}>
-                <h2 className={styles.title}>{title}</h2>
-                <div className={descriptionWrapClass}>
-                    <p className={descriptionHeadClass}>{descriptionHead}</p>
-                    <p className={descriptionFootClass}>{descriptionFoot}</p>
-                </div>
-                <Button type='anchor' text={buttonText} className="yellow-border-btn"/>
+          <div className={styles.imageWrapper}>
+            <Image
+              src={imageSrc}
+              alt={imageAlt}
+              width={width}
+              height={height}
+              className={imgClass}
+            />
+          </div>
+          <div className={styles.content}>
+            <h2 className={styles.title}>{title}</h2>
+            <div className={descriptionWrapClass}>
+              <p className={descriptionHeadClass}>{descriptionHead}</p>
+              <p className={descriptionFootClass}>{descriptionFoot}</p>
             </div>
+            <Button
+              type="anchor"
+              text={buttonText}
+              className="yellow-border-btn"
+            />
+          </div>
         </div>
       </div>
     </section>

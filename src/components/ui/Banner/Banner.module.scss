@@ -3,12 +3,19 @@
 .section {
     background: $c-milk;
     padding: 70px 0;
+
+    @include phablet {
+        padding: 30px 0;
+    }
 }
 
 .wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include full-width-content;
+    gap: 1rem;
+
+    @include tablet {
+        flex-direction: column;
+    }
 }
 
 .content {
@@ -16,8 +23,24 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
+
+    @include laptop {
+        max-width: 510px;
+    }
+
+    @include tablet-large {
+        max-width: 340px;
+    }
+
+    @include tablet {
+        max-width: 100%;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
 }
 
 .title {
     @include title;
 }
+

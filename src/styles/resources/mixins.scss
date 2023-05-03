@@ -16,6 +16,14 @@
   font-family: $secondary-font-family;
   color: $c-black;
   font-weight: 800;
+
+  @include tablet-large {
+    font-size: 2rem;
+  }
+
+  @include phone {
+    font-size: 1.8rem;
+  }
 }
 
 /* ---- Positions ---- */

@@ -8,3 +8,19 @@
 .descriptionFoot {
     opacity: .4;
 }
+
+.image {
+
+    @include laptop {
+        height: 400px;
+        width: 100%;
+    }
+
+    @include tablet-large {
+        height: 370px;
+    }
+
+    @include phone {
+        height: 320px;
+    }
+}
