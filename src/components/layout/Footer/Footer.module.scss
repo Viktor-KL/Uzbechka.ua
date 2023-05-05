@@ -1,0 +1,78 @@
+@import "/src/styles/resources/";
+
+.footer {
+  margin-top: 150px;
+  padding: 70px 0;
+  background: #41364b;
+}
+
+.logo {
+  text-align: center;
+  @include logo;
+}
+.logoPart {
+  color: $c-yellow;
+}
+
+.wrapper {
+  display: flex;
+  @include full-width-content;
+  align-items: start;
+  margin-top: 40px;
+
+  @include tablet-large {
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  @include tablet {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.title {
+  color: $c-white;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: $secondary-font-family;
+  margin-bottom: 30px;
+
+  @include tablet {
+    margin-bottom: 16px;
+  }
+}
+
+.description {
+  @include description;
+  max-width: 240px;
+}
+
+.links_wrapper {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 20px;
+}
+
+.links {
+  @include description;
+  margin-top: 8px;
+  display: inline-block;
+}
+
+.map {
+  border-radius: $border-radius;
+  @include tablet-large {
+    margin-top: 40px;
+    width: 100%;
+  }
+}
+
+.map_wrapper {
+
+  @include tablet-large {
+    width: 100%;
+  }
+}

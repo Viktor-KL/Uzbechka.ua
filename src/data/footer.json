@@ -1,0 +1,50 @@
+{
+  "address": {
+    "title": "Наша адреса",
+    "description": "Office No. 302, Park Place, Trade Center Area, Dubai, UAE. 554513"
+  },
+  "navigation": {
+    "title": "Навігація",
+    "links_1": [
+      {
+        "link": "Головна",
+        "href": ""
+      },
+      {
+        "link": "Про нас",
+        "href": "#about"
+      },
+      {
+        "link": "Меню",
+        "href": "#menu"
+      }
+    ],
+    "links_2": [
+      {
+        "link": "Переваги",
+        "href": "#benefits"
+      },
+      {
+        "link": "Відгуки",
+        "href": "#feedbacks"
+      },
+      {
+        "link": "FAQ",
+        "href": "#faq"
+      }
+    ]
+  },
+  "contacts": {
+    "title": "Контакти",
+    "links": [
+      {
+        "text": "(000) - 000 - 0000",
+        "href": "tel:+0000000000"
+      },
+      {
+        "text": "(000) - 000 - 0000",
+        "href": "tel:+0000000000"
+      }
+    ]
+  }
+}

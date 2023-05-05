@@ -1,0 +1,28 @@
+{
+     "section": {
+        
+            "title": "Поширені запитання",
+            "description": "Тут будуть зібрані всі питання, які ви нам задавали і задаєте щодня",
+            "buttonText": "Залишити відгук"
+        
+     },
+     "list": [
+        {
+            "question": "1 Питання",
+            "answer": "They already bought 2 apartments from Comfort, in different complexes, under different conditions: 100% payment and rescheduling. We live in one of the apartments, we are waiting for the handover of the second one. The company is 100% satisfied with the provision of services."
+        },
+        {
+            "question": "2 Питання",
+            "answer": "They already bought 2 apartments from Comfort, in different complexes, under different conditions: 100% payment and rescheduling. We live in one of the apartments, we are waiting for the handover of the second one. The company is 100% satisfied with the provision of services."
+        },
+        {
+            "question": "3 Питання",
+            "answer": "They already bought 2 apartments from Comfort, in different complexes, under different conditions: 100% payment and rescheduling. We live in one of the apartments, we are waiting for the handover of the second one. The company is 100% satisfied with the provision of services."
+        },
+        {
+            "question": "4 Питання",
+            "answer": "They already bought 2 apartments from Comfort, in different complexes, under different conditions: 100% payment and rescheduling. We live in one of the apartments, we are waiting for the handover of the second one. The company is 100% satisfied with the provision of services."
+        }
+     ]
+
+}

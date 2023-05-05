@@ -6,7 +6,7 @@ import styles from "./About.module.scss";
 
 const About: FC = () => {
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id="#about">
       <div className="container">
         <div className={styles.wrapper}>
           <p className={styles.description}>

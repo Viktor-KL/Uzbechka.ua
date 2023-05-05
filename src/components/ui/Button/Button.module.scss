@@ -33,6 +33,7 @@
 }
 
 .yellow-border-btn {
+  font-size: 16px;
   width: 250px;
   text-align: center;
   color: $c-black;
@@ -46,5 +47,6 @@
     color: $c-black;
     background: none;
     border: 1px solid $c-black;
+    cursor: pointer;
   }
 }

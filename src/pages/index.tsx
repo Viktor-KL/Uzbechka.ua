@@ -6,6 +6,7 @@ import Menu from 'components/screens/Menu/Menu';
 import BannerMenu from 'components/screens/BannerMenu/BannerMenu';
 import BannerInstagram from 'components/screens/BannerInstagram/BannerInstagram';
 import Benefits from 'components/screens/Benefits/Benefits';
+import Faq from 'components/screens/Faq/Faq';
 
 const Home: NextPage = () => {
   return (
@@ -19,6 +20,7 @@ const Home: NextPage = () => {
       <BannerMenu />
       <Benefits />
       <BannerInstagram />
+      <Faq />
     </div>
   )
 }
