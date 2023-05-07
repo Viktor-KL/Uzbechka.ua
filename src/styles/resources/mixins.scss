@@ -101,3 +101,8 @@
     @content;
   }
 }
+
+/* ---- Transition ---- */
+@mixin transition {
+  transition: all .3s ease;
+}

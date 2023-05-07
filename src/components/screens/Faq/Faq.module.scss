@@ -2,20 +2,29 @@
 
 .section {
     background: $c-milk;
-    padding: 70px 0;
     border-radius: $border-radius;
+    padding: 70px 0;
 }
 
 .wrapper {
     @include full-width-content;
     align-items: start;
     gap: 2rem;
+
+    @include tablet {
+        flex-direction: column;
+    }
 }
 
 .content {
+    max-width: 40%;
     display: flex;
     flex-direction: column;
-    max-width: 40%;
+
+    @include tablet {
+        max-width: 100%;
+        text-align: center;
+    }
 }
 
 .title {
@@ -30,6 +39,11 @@
 
 .list {
     width: 50%;
+    list-style-type: none;
+
+    @include tablet {
+        width: 100%;
+    }
 }
 
 .item {
@@ -45,28 +59,37 @@
 
 .button {
     width: 100%;
+    display: flex;
     justify-content: space-between;
-    background: none;
     padding: 0;
 
     &:after {
         content: '';
         display: block;
         width: 32px;
+        height: 32px;
+        background: ('/img/faq/arrow-icon.svg');
     }
 
     &:hover {
+        // @include link-hover();
         cursor: pointer;
     }
 }
 
 .button_active {
+    background: $c-black;
+    border-top-left-radius: $border-radius;
+    border-top-right-radius: $border-radius;
+    border-bottom: 1px dashed $c-white;
+
     &:after {
         transform: rotate(180deg);
     }
 
     .question {
         color: $c-white;
+        transition: .3s ease;
     }
 }
 
@@ -75,16 +98,33 @@
     font-family: $secondary-font-family;
     font-weight: 500;
     color: $c-black;
-    width: 90%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
     text-align: left;
     padding: 24px;
+}
+
+.arrow_active {
+    transform: rotate(-180deg);
+    filter: invert(98%) sepia(0%) saturate(47%) hue-rotate(138deg) brightness(117%) contrast(100%);
+    transition: transform .3s ease;
 }
 
 .answer_wrapper {
     height: 0;
     overflow: hidden;
     transition: height ease .3;
+}
+
+.answer_wrapper_active {
+    background: $c-black;
+    border-bottom-left-radius: $border-radius;
+    border-bottom-right-radius: $border-radius;
+    color: $c-white;
+    height: auto;
     padding: 24px;
+    transition: color .3s ease;
 }
 
 .answer {
