@@ -1,0 +1,27 @@
+@import '/src/styles/resources/';
+
+.section {
+    padding: 70px 0;
+}
+
+.content {
+    max-width: 525px;
+}
+
+.title {
+    @include title;
+    color: $c-white;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.description {
+    @include light-description;
+    margin: 16px 0 40px;
+}
+
+.button {
+    width: 230px;
+    font-size: 18px;
+}
+
